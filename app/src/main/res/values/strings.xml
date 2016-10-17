@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EA</string>
+    <string-array name="academic_titles">
+        <item>"Mipangilio"</item>
+        <item>"Madarasa"</item>
+        <item>"Maendeleo"</item>
+    </string-array>
+
+    <string-array name="class_titles">
+        <item>"Mahudhurio"</item>
+        <item>"Ripoti"</item>
+    </string-array>
+    <string name="app_moto">Smart Enrollment and attendance tracking</string>
+</resources>

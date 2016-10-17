@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.rabson.ea.AcademicYear.SetAcademicYearActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:textColorHighlight="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_from"
+            android:gravity="left"
+            android:hint="Kuanzia"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorWhite"
+        android:textColorHighlight="@color/colorAccent"
+        android:layout_below="@+id/et_from"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_to"
+            android:gravity="left"
+            android:hint="Hadi"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_fTerm"
+                android:gravity="left"
+                android:hint="Muhula wa kwanza"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_fTerm_end"
+                android:hint="Hadi"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_mdTerm_holiday_start"
+                android:gravity="left"
+                android:hint="Middleterm Holiday"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_mdTerm_holiday_end"
+                android:hint="Hadi"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_longHoliday_start"
+                android:gravity="left"
+                android:hint="Middleterm Holiday"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_longHoliday_end"
+                android:hint="Hadi"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_secondTerm_start"
+                android:gravity="left"
+                android:hint="Middleterm Holiday"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_secondTerm_end"
+                android:hint="Hadi"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_secondMidTermHoliday_start"
+                android:gravity="left"
+                android:hint="Middleterm Holiday"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_secondMidTermHoliday_end"
+                android:hint="Hadi"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_secondMidTermLongHoliday_start"
+                android:gravity="left"
+                android:hint="Middleterm Holiday"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="8dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:layout_below="@+id/et_from"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_secondMidTermLongHoliday_end"
+                android:hint="Hadi"
+                android:inputType="text"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bn_save"
+        android:background="@color/colorAccent"
+        android:text="HIFADHI"
+        android:textSize="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

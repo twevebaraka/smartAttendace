@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.rabson.ea.AcademicYear.SetAcademicYearActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_academic_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_academic_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_academic_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_academic_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_fTerm_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_fTerm_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_fTerm_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_fTerm_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_mdTerm_holiday_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_mdTerm_holiday_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_mdTerm_holiday_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_mdTerm_holiday_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_longHoliday_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_longHoliday_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_longHoliday_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_longHoliday_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_secondTerm_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_secondTerm_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_secondTerm_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_secondTerm_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_secondMidTermHoliday_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_secondMidTermHoliday_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_secondMidTermHoliday_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_secondMidTermHoliday_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/iv_secondMidTermLongHoliday_start_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_secondMidTermLongHoliday_start"
+                        android:gravity="left"
+                        android:hint="Start Term"
+                        android:inputType="date"/>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:textSize="25sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/calendar"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/iv_secondMidTermLongHoliday_end_calendar"
+                    android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_secondMidTermLongHoliday_end"
+                        android:layout_marginLeft="10dp"
+                        android:hint="End Term"
+                        android:inputType="date"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bn_save"
+                android:background="@color/colorAccent"
+                android:text="HIFADHI"
+                android:textSize="10dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

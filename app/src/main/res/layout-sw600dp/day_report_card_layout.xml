@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_daily_report"
+    android:padding="16dp"
+    android:layout_marginTop="140dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_day_registered"
+            android:text="Walioandikwa"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="65dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_day_total"
+            android:text="30"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:id="@+id/iv_day_present_logo"
+                android:src="@drawable/present"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day_present"
+                android:text="Walioandikwa"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day_total_present"
+                android:text="23"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:id="@+id/iv_day_absent_logo"
+                android:src="@drawable/absent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day_absent"
+                android:text="Watoro"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day_total_absent"
+                android:text="2"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:id="@+id/iv_sick_logo"
+                android:src="@drawable/sick"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sick"
+                android:text="Wagojwa"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="16dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_day_total_sick"
+                android:text="2"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
