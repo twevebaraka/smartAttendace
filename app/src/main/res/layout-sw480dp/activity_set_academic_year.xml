@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:fitsSystemWindows="true"
     tools:context="com.example.rabson.ea.AcademicYear.SetAcademicYearActivity">
 
@@ -20,7 +21,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="30dp"
             android:layout_below="@+id/toolbar"
             android:orientation="vertical">
 
@@ -31,7 +32,7 @@
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -39,25 +40,27 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_academic_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="Muhula Unaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="5dp"
@@ -65,11 +68,11 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_academic_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="Muhula Unaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
@@ -78,10 +81,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -89,19 +93,20 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_fTerm_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="muhula wa 1 unaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
@@ -114,11 +119,11 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_fTerm_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="muhula wa 1 unaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
@@ -127,10 +132,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -138,19 +144,20 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_mdTerm_holiday_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="muhula mfupi unaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
@@ -163,11 +170,11 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_mdTerm_holiday_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="muhula mfupi unaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
@@ -176,10 +183,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -187,19 +195,20 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_longHoliday_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="likizo ndefu inaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
@@ -212,11 +221,11 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_longHoliday_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="likizo ndefu inaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
@@ -225,10 +234,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -236,19 +246,20 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_secondTerm_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="Muhula 2 unaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
@@ -261,11 +272,11 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_secondTerm_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="muhula 2 unaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
@@ -274,10 +285,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -285,19 +297,20 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_secondMidTermHoliday_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="likizo fupi inaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
@@ -310,11 +323,11 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_secondMidTermHoliday_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="likizo fupi inaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
@@ -322,10 +335,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="30dp"
                 android:weightSum="1">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/calendar"
                     android:layout_marginLeft="16dp"
@@ -333,19 +347,20 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="180dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_secondMidTermLongHoliday_start"
                         android:gravity="left"
-                        android:hint="Start Term"
+                        android:hint="likizo ndefu inaanza"
+                        android:layout_marginLeft="10dp"
                         android:inputType="date"/>
 
                 <TextView
                     android:layout_width="35dp"
                     android:layout_height="wrap_content"
-                    android:text="to"
+                    android:text="TO"
                     android:textSize="25sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:textColor="@color/colorBlack"
                     android:layout_marginLeft="10dp"/>
 
@@ -358,23 +373,25 @@
                     android:layout_gravity="center"/>
 
                     <EditText
-                        android:layout_width="210dp"
+                        android:layout_width="155dp"
                         android:layout_height="wrap_content"
                         android:id="@+id/et_secondMidTermLongHoliday_end"
                         android:layout_marginLeft="10dp"
-                        android:hint="End Term"
+                        android:hint="likizo fupi inaisha"
                         android:inputType="date"/>
 
             </LinearLayout>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
                 android:id="@+id/bn_save"
                 android:background="@color/colorAccent"
                 android:text="HIFADHI"
-                android:textSize="10dp"
-                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
                 android:textColor="#ffffff"
                 android:layout_marginBottom="16dp"/>
 
@@ -382,4 +399,4 @@
 
     </ScrollView>
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

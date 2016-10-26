@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.rabson.ea.Attendance.MorningAttendace;
 import com.example.rabson.ea.Attendance.StudentAttendanceActivity;
 import com.example.rabson.ea.R;
 import com.example.rabson.ea.Report.ReportActivity;
@@ -45,7 +46,7 @@ public class ClassTeacherAdapter extends RecyclerView.Adapter<ClassTeacherHolder
             public void onItemClick(View v, int position) {
                 switch (position){
                     case 0:
-                        i = new Intent(c,StudentAttendanceActivity.class);
+                        i = new Intent(c,MorningAttendace.class);
                         break;
                     case 1:
                         i = new Intent(c,ReportActivity.class);

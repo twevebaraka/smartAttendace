@@ -12,12 +12,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="236dp"
+            android:layout_height="110dp"
             android:layout_margin="10dp"
             android:id="@+id/iv_logo"
             android:src="@drawable/attendance"
@@ -39,7 +39,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="5dp"/>
 
         </LinearLayout>

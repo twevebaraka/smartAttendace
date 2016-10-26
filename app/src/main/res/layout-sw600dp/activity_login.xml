@@ -9,14 +9,14 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="320dp"
         android:id="@+id/app_icon"
         android:src="@drawable/icon"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
+        android:textSize="35dp"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@color/colorWhite"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorWhite"
         android:textColorHighlight="@color/colorAccent"
-        android:paddingTop="30dp"
+        android:paddingTop="40dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
         <EditText
@@ -64,7 +64,7 @@
         android:layout_gravity="center"
         android:id="@+id/bn_login"
         android:text="INGIA"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/colorAccent"
         android:layout_marginTop="35dp"/>
@@ -73,11 +73,11 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:id="@+id/tv_forget_password"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:text="Umesahau neno la siri?"/>
 
 </LinearLayout>

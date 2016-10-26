@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
         Intent i=getIntent();
         String tech_name=i.getStringExtra("name");
         tech_id=i.getStringExtra("id");
-        EditText text= (EditText) findViewById(R.id.test);
-        if(text != null){
-            Toast.makeText(getApplicationContext(),"yes"+tech_name,Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_SHORT).show();
-        }
+//        EditText text= (EditText) findViewById(R.id.test);
+//        if(text != null){
+//            Toast.makeText(getApplicationContext(),"yes"+tech_name,Toast.LENGTH_SHORT).show();
+//        }
+//        else{
+//            Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_SHORT).show();
+//        }
 
         //etSname.setText(tech_id);
         Log.e("Nuller",tech_name);
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     void updateTeachers(){
-        String url_update= "http://192.168.43.252/test/update.php";
+        String url_update= "http://foodly.pe.hu/hype/update.php";
         StringRequest stringDelete=new StringRequest(Request.Method.POST, url_update, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.rabson.ea.AcademicYear.SetAcademicYearActivity;
 import com.example.rabson.ea.Attendance.StudentAttendanceActivity;
 import com.example.rabson.ea.ClassTeacherDash.ClassTeacherActivity;
+import com.example.rabson.ea.Classes.ClassListActivity;
 import com.example.rabson.ea.ListViewHandler.TeacherActivity;
 import com.example.rabson.ea.R;
 import com.example.rabson.ea.Report.ReportActivity;
@@ -52,10 +54,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeHolder> {
                          i = new Intent(c,TeacherActivity.class);
                         break;
                     case 1:
-                        i = new Intent(c,StudentAttendanceActivity.class);
+                        i = new Intent(c,ClassListActivity.class);
                         break;
                     case 2:
-                        i = new Intent(c,ClassTeacherActivity.class);
+                        i = new Intent(c,SetAcademicYearActivity.class);
                         break;
                    case 3:i = new Intent(c, ReportActivity.class);
                        break;

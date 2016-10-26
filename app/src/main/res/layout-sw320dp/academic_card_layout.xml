@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="236dp"
             android:layout_margin="10dp"
             android:id="@+id/iv_academic_logo"
             android:src="@drawable/attendance"
@@ -39,7 +39,7 @@
             android:gravity="center"
             android:textColor="@color/colorPrimaryDark"
             android:layout_marginLeft="10dp"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:layout_marginBottom="5dp"/>
 
     </LinearLayout>

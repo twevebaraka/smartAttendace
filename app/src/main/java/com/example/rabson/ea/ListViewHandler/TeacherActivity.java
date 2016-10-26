@@ -37,23 +37,23 @@ import java.util.Map;
 import helpers.AppController;
 
 public class TeacherActivity extends AppCompatActivity {
-    public static String url_search="http://192.168.43.252/test/search.php";
+    public static String url_search="http://foodly.pe.hu/hype/search.php";
     ListView listView;
     List<Teacher> data=new ArrayList<>();
 
-    public FloatingActionMenu fam;
-    public FloatingActionButton fabEdit, fabDelete, fabAdd;
     private Teacher myites;
     private String teacher_id;
     private String name;
     private String id;
     private String teacher_name;
+    private CustomAdapter adapter2;
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
+        android.support.design.widget.FloatingActionButton fab = (android.support.design.widget.FloatingActionButton) findViewById(R.id.fab);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Walimu");
@@ -61,84 +61,41 @@ public class TeacherActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.lv_teacher);
         parseData();
         final CustomAdapter adapter= new CustomAdapter(this, data);
-        listView.setAdapter(adapter);
+       // listView.setAdapter(adapter);
         listView.setDivider(null);
         listView.setDividerHeight(0);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                    myites= data.get(position);
                    teacher_id=myites.getId();
                    teacher_name =myites.getTeacherName();
                      openDialog(); // deleter and edit
 
                   Log.e("myTesta",teacher_id);
-//                if (view.getId()==techerId){
-//                    Log.e("test",teacher_id);
-                    Toast.makeText(getApplicationContext(),""+teacher_id,Toast.LENGTH_LONG).show();
+               Toast.makeText(getApplicationContext(),""+teacher_id,Toast.LENGTH_LONG).show();
 
-       //         }
-              //  Intent next_intent=new Intent(context,getDetails.class);
-//                next_intent.putExtra("id",current.id);
-//                context.startActivity(next_intent);
-
-                //openDialog();
             }
         });
 
-
-    }
-
-//    public void setUpFloatingActionMenu(){
-//        //Floating action menu (FAM)
-//        fabAdd = (FloatingActionButton) findViewById(R.id.fab2);
-//        fabDelete = (FloatingActionButton) findViewById(R.id.fab3);
-//        fabEdit = (FloatingActionButton) findViewById(R.id.fab1);
-//        fam = (FloatingActionMenu) findViewById(R.id.fab_menu);
-//
-//        //handling menu status (open or close)
-//        fam.setOnMenuToggleListener(new FloatingActionMenu.OnMenuToggleListener() {
-//            @Override
-//            public void onMenuToggle(boolean opened) {
-//                if (opened) {
-//                    showToast("Menu is opened");
-//                } else {
-//                    showToast("Menu is closed");
-//                }
-//            }
-//        });
-//
-//        //handling each floating action button clicked
-//        fabDelete.setOnClickListener(onButtonClick());
-//        fabEdit.setOnClickListener(onButtonClick());
-//        fabAdd.setOnClickListener(onButtonClick());
-//
-//        fam.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if (fam.isOpened()) {
-//                    fam.close(true);
-//                }
-//            }
-//        });
-//
-//    }
-
-    private View.OnClickListener onButtonClick() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (view == fabAdd) {
-                    showToast("Class Teacher");
-                } else if (view == fabDelete) {
-                    showToast("TOD");
-                } else {
-                    showToast("Register Teacher");
+        if(fab!=null){
+            fab.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Click action
+                    Intent intent = new Intent(TeacherActivity.this,RegisterTeacherActivity.class);
+                    startActivity(intent);
                 }
-                fam.close(true);
-            }
-        };
+            });
+
+        }
+        else{
+            Toast.makeText(TeacherActivity.this,"No Button Pressed",Toast.LENGTH_SHORT).show();
+        }
+
+
+
+
     }
 
     private void showToast(String msg) {
@@ -182,7 +139,7 @@ public class TeacherActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonObj=response.getJSONObject(i);
                          id=jsonObj.getString("id");
-                       name=jsonObj.getString("name");
+                       name=jsonObj.getString("surnames");
                         myites.setTeacherName(name);
                         myites.setId(id);
                         data.add(myites);
@@ -193,10 +150,9 @@ public class TeacherActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
+                adapter2=new CustomAdapter(getApplicationContext(),data);
 
-
-
-
+             listView.setAdapter(adapter2);
 
             }
         },new Response.ErrorListener() {

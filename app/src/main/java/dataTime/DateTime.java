@@ -21,15 +21,12 @@ import java.util.Calendar;
 import java.util.Locale;
 
 public class DateTime extends AppCompatActivity implements View.OnClickListener {
-
         private EditText fromDateEtxt,toDateEtxt;
         private DatePickerDialog fromDate,toDate;
-
-
         @Override
-        public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-            super.onCreate(savedInstanceState, persistentState);
-            //setContentView(R.layout.muhula);
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.muhula);
             findViewByID();
             getCalender();
         }
@@ -48,16 +45,17 @@ public class DateTime extends AppCompatActivity implements View.OnClickListener 
             fromDate=new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                    calendar.set(year,month,day);
+                    calendar.set(day,month,year);
                     Log.e("Today",simpleCalendar.format(calendar.getTime()));
                     EditText fromDate=null;
+                    assert fromDate != null;
                     fromDate.setText(simpleCalendar.format(calendar.getTime()));
                 }
             }, calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH));
-            DatePickerDialog toDate=new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+             toDate=new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                    calendar.set(year,month,day);
+                    calendar.set(day,month,year);
                 }
             },calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH));
         }
@@ -73,12 +71,11 @@ public class DateTime extends AppCompatActivity implements View.OnClickListener 
 
         }
         public void findViewByID(){
-//            fromDateEtxt = (EditText) findViewById(R.id.bn_register);
-//            fromDateEtxt.setInputType(InputType.TYPE_NULL);
-//            //fromDateEtxt.requestFocus();
-//
-//            toDateEtxt = (EditText) findViewById(R.id.etxt_todate);
-//            toDateEtxt.setInputType(InputType.TYPE_NULL);
+            fromDateEtxt = (EditText) findViewById(R.id.bn_start);
+            fromDateEtxt.setInputType(InputType.TYPE_NULL);
+            //fromDateEtxt.requestFocus();
+            toDateEtxt = (EditText) findViewById(R.id.bn_end);
+            toDateEtxt.setInputType(InputType.TYPE_NULL);
         }
 
     }

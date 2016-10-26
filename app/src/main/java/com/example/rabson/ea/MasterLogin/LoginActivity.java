@@ -1,5 +1,7 @@
 package com.example.rabson.ea.MasterLogin;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,14 +39,22 @@ public class LoginActivity extends AppCompatActivity {
     Button bn_login;
     TextView tv_forget_password;
     String phoneNumber,password;
+    ProgressDialog pDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initViews();
+
         bn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                pDialog = new ProgressDialog(LoginActivity.this);
+                pDialog.setTitle("Connecting....");
+                pDialog.setMessage("PLease wait ...");
+                pDialog.setIndeterminate(true);
+                pDialog.setCancelable(true);
+                pDialog.show();
              captureInfo();
             }
         });
@@ -59,27 +69,37 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void captureInfo(){
-        final String login_url = "http://192.168.43.252/test/login.php";
+
+        final String login_url = "http://foodly.pe.hu/hype/login.php";
                 phoneNumber = et_phone.getText().toString();
                 password = et_password.getText().toString();
                 StringRequest stringRequest=new StringRequest(Request.Method.POST, login_url,new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
                         Log.e("responese",response);
                              if (response.equalsIgnoreCase("teacher")){
+
+
                                  startActivity(new Intent(getApplicationContext(), ClassTeacherActivity.class));
+                                 pDialog.dismiss();
                              }
                         else if(response.equalsIgnoreCase("master")){
+
                                  startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                                 pDialog.dismiss();
                              }
                         else {
                                  Toast.makeText(getApplication(),"NO ACCESS TO THIS APP",Toast.LENGTH_LONG).show();
+                                 pDialog.dismiss();
                              }
                     }
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.e("fuck","down");
+                        Log.e("network error","down");
+                        Toast.makeText(getApplication(),"NO INTERNER CONNECTION!!",Toast.LENGTH_LONG).show();
+
 
                     }
                 }){
@@ -94,5 +114,13 @@ public class LoginActivity extends AppCompatActivity {
         AppController.getmInstance().addToRequestQue(stringRequest);
             }
 
-        }
+//       if (pDialog!=null){
+//           pDialog.show();
+//       }
+//    else {
+//           pDialog.dismiss();
+      // }
+
+}
+
 

@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_marginTop="5dp"
     android:layout_height="70dp">
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -16,9 +15,8 @@
         android:scaleType="centerCrop"
         android:layout_marginBottom="5dp"
         android:src="@drawable/avatar"/>
-
     <TextView
-        android:layout_width="130dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:id="@+id/tv_student_name"
         android:layout_toRightOf="@+id/iv_student_image"
@@ -28,8 +26,6 @@
         android:layout_marginLeft="10dp"
         android:textColor="@color/colorPrimaryDark"
         android:gravity="center"/>
-
-
     <CheckBox
         android:id="@+id/cb_present"
         android:layout_width="wrap_content"
@@ -37,10 +33,9 @@
         android:onClick="androidCheckBoxClicked"
         android:layout_marginLeft="270dp"
         android:layout_alignLeft="@+id/iv_image"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:gravity="center_vertical"
         android:layout_marginBottom="20dp" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

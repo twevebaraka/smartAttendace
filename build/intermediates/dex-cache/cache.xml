@@ -1,2 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_c7be9ca49993dc789ba774f5851b6b1e4d6f1fe4.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_d8238a6a3f8d4c1e024263bfca7e009701e6ccb1.jar" />
+    </item>
+    <item
+        jar="/home/becks/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_4f2fa695ba70d0b1ee3dfe28a37a67127c0982ed.jar" />
+    </item>
+    <item
+        jar="/home/becks/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_0de54eab41345f983022fca90a1bc7a4f44f1674.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="706773f23369887b6f30f227b25dc4e49a09a5a8">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_9799caa78f85ccc06e094bf4572caade6c58493f.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.roughike/bottom-bar/1.4.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c4e65d46b09bd2156ad6fdf147d08b17c0fef75c">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.roughike-bottom-bar-1.4.0.1_c0f8f89fcc617a273ae750fc07a13ced72bc4965.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.1.0_85dec40a33b9fb3c1ccc1ff334d50dfc7734a578.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_685a5ea6b45fc85c3b450f9f81698263b8fad62e.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_e50892a09337985aae21cb6326688f4ee47c9698.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_874a32ad22922c7c3cc0de0e425530d1e0794373.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_17d1eb0997ae0ec6cc1a733b05d7c2b4d7538ba6.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23b11e93fe4a9550c017570653edb1275c84c978">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/instant-run_6a1664b39d1e02201411a1dc89b601c5430f986d.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_7e9be91425a8cd0ec2524d151e7e7d42717d64b7.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_5a2c1a4e2adcdbd9c5729a7d5dc98666deb5d2d6.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_4dc8a22438f7975231e2c3bc35144b5bde3e3379.jar" />
+    </item>
+    <item
+        jar="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="/home/becks/AndroidStudioProjects/EA3/EA/app/build/intermediates/pre-dexed/debug/com.github.clans-fab-1.6.4_68f25b2056e5f1e2477a52d0e17c09c01021ec5e.jar" />
+    </item>
+
+</items>

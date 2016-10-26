@@ -52,8 +52,7 @@ public class CustomAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = inflater.inflate(R.layout.row_layout, parent, false);
         }
-
-        ImageView teacherImage = (ImageView) convertView.findViewById(R.id.iv_image);
+       // ImageView teacherImage = (ImageView) convertView.findViewById(R.id.iv_image);
         TextView teacherName = (TextView) convertView.findViewById(R.id.tv_tName);
             Teacher myteacher =teachers.get(position);
                   teacherName.setText(myteacher.getTeacherName());
